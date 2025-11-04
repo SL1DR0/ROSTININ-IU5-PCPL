@@ -7,14 +7,14 @@ import random
 class File:
     file_id: int
     file_size: int
-    folder_id: Optional[int] = None  # связь 1→М
+    folder_id: Optional[int] = None
 
 
 @dataclass
 class Folder:
     folder_id: int
     name: str
-    files: list[File] = field(default_factory=list)  # 1→М
+    files: list[File] = field(default_factory=list)
 
 
 @dataclass
