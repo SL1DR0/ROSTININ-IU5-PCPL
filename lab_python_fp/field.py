@@ -6,10 +6,10 @@ def field(items, *args):
             if val is not None:
                 yield val
         else:
-            # Формируем словарь только из существующих и не-None ключей
             res = {a: item.get(a) for a in args if item.get(a) is not None}
             if res:
                 yield res
+
 
 if __name__ == '__main__':
     goods = [

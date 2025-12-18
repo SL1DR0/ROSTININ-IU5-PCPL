@@ -7,7 +7,6 @@ class Unique(object):
     def __next__(self):
         while True:
             item = next(self.items)
-            # Если игнорируем регистр и это строка, сравниваем в нижнем регистре
             val = item.lower() if self.ignore_case and isinstance(item, str) else item
 
             if val not in self.used_elements:
