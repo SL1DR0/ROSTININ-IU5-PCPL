@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 
-TOKEN =
+TOKEN =""
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -12,8 +12,8 @@ dp = Dispatcher()
 @dp.message(Command("start"))
 async def start_command(message: types.Message):
     builder = ReplyKeyboardBuilder()
-    builder.row(types.KeyboardButton(text="Привет! 👋"), types.KeyboardButton(text="Как дела? 😊"))
-    builder.row(types.KeyboardButton(text="Создать Inline-кнопки 🔘"))
+    builder.row(types.KeyboardButton(text="Привет!"), types.KeyboardButton(text="Как дела?"))
+    builder.row(types.KeyboardButton(text="Создать Inline-кнопки"))
 
     await message.answer(
         "Привет! Я бот с кнопками. Выбери действие на клавиатуре ниже:",
@@ -21,7 +21,7 @@ async def start_command(message: types.Message):
     )
 
 
-@dp.message(F.text == "Создать Inline-кнопки 🔘")
+@dp.message(F.text == "Создать Inline-кнопки")
 async def show_inline(message: types.Message):
     inline_builder = InlineKeyboardBuilder()
     inline_builder.row(types.InlineKeyboardButton(
