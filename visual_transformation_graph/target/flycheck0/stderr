@@ -1,1 +1,14 @@
-    Blocking waiting for file lock on package cache
+    Updating crates.io index
+warning: spurious network error (3 tries remaining): [35] SSL connect error (Recv failure: Connection reset by peer)
+warning: spurious network error (2 tries remaining): [35] SSL connect error (Recv failure: Connection reset by peer)
+warning: spurious network error (1 try remaining): [35] SSL connect error (Recv failure: Connection reset by peer)
+error: failed to get `anyhow` as a dependency of package `visual_transformation_graph v0.1.0 (/home/marko/proct/ROSTININ-IU5-PCPL/visual_transformation_graph)`
+
+Caused by:
+  download of config.json failed
+
+Caused by:
+  failed to download from `https://index.crates.io/config.json`
+
+Caused by:
+  [35] SSL connect error (Recv failure: Connection reset by peer)
