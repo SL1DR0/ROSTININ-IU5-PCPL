@@ -1,0 +1,8 @@
+[package]
+name = "visual_transformation_graph"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+opencv = "0.88"
