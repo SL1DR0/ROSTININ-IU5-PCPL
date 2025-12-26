@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 
-TOKEN =""
+TOKEN ="7524454341:AAHpvUEgbGgIM0aVghsixK9gXcosOqqVpB0"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
